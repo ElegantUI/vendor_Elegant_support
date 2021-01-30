@@ -17,4 +17,5 @@ android_library {
 
     resource_dirs: ["res"],
 
+    min_sdk_version: "21",
 }
