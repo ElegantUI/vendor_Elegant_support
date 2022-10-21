@@ -30,7 +30,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import com.android.internal.util.tenx.tenxUtils;
+//import com.android.internal.util.tenx.tenxUtils;
 
 import com.tenx.support.R;
 import com.tenx.support.colorpicker.ColorPickerDialog;
@@ -312,9 +312,9 @@ public class ColorBlendPreference extends Preference
 
     private void updateDialogSliderPreview() {
         int currentPreview = mDialogColorPreviewSlider.getProgress();
-        mDialogPreviewColorBetween.setBackgroundColor(
+        /*mDialogPreviewColorBetween.setBackgroundColor(
                 tenxUtils.getBlendColorForPercent(mPreviewColorEnd, mPreviewColorStart,
-                        mPreviewBlendReverse, currentPreview));
+                        mPreviewBlendReverse, currentPreview));*/
         mDialogColorPreviewText.setText(
                 getContext().getString(R.string.color_blend_preview, currentPreview));
     }
@@ -371,10 +371,10 @@ public class ColorBlendPreference extends Preference
         if (mViewColorEnd != null) {
             mViewColorEnd.setBackgroundColor(mColorEnd);
         }
-        if (mViewColorBetween != null) {
+        /*if (mViewColorBetween != null) {
             mViewColorBetween.setBackgroundColor(
                     tenxUtils.getBlendColorForPercent(mColorEnd, mColorStart, mBlendReverse, 50));
-        }
+        }*/
     }
 
     @Override
